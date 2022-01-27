@@ -32,7 +32,41 @@ Partner server назначим SRV1
  
   ![](pic/r1.png)   
   ![](pic/cli1.png)   
-  ![](pic/dca.png)  
+  ![](pic/dca.png)    
+  
+  ### Домен spb.wse 
+  Сделаем сервер DC2 контроллером домена SPB.wse, а также добавим ему роли сервера DHCP и DNS.    
+  ![](pic/DC2_1.png)  
+  ![](pic/DC2_2.png)  
+  ![](pic/DC2_3.png)  
+  ![](pic/DC2_4.png)  
+  ![](pic/DC2_5.png)  
+  ![](pic/DC2_6.png)  
+  **Настроим протокол DHCP**  
+  Настроим DHCP. Т.к. первые два адреса из сети заняты серверами, то pool начнется с адреса 172.16.20.99
+Partner server назначим SRV2  
+![](pic/DC2_DHCP.png) 
+![](pic/DHCP.png)   
+**Настроим протокол DNS**   
+Настроим зоны прямого и обратного просмотров. 
+
+![](pic/DNS1.png) 
+![](pic/DNS2.png)   
+![](pic/DNS3.png)   
+![](pic/DNS4.png) 
+![](pic/DNS5.png) 
+![](pic/DNS6.png) 
+![](pic/dns7.png)   
+
+**Добовление остальных хостов в домен**  
+ 
+  ![](pic/SRV2.png)   
+  ![](pic/CLI2_1.png)   
+
+  ![](pic/r2.png)   
+    
+
+  
   
  
   
