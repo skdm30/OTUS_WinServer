@@ -6,7 +6,7 @@
   
 1. Запускаем Group Policy Management
 2. Создадим групповую политику **fw**
-3. Далее переходим Computer Configuration -> Policies -> Windows Setting -> Security Settings -> Windows Defender  и включаем Firewall для всех сетевых профилей. 
+3. Далее переходим *Computer Configuration -> Policies -> Windows Setting -> Security Settings -> Windows Defender  и включаем Firewall* для всех сетевых профилей. 
 ![](pic/wf1.png)  
 4. Далее создаем новое правило  
 ![](pic/wf_2.png) 
@@ -19,13 +19,13 @@
 ![](pic/wf_CLI.png)   
 
 **Далее запретим анимацию при первом входе пользователей в систему на всех клиентских компьютерах домена**    
-Снова создадим групповую политику Computer Configuration -> Policies -> Administrative Templates -> System -> Logon
+Снова создадим групповую политику *Computer Configuration -> Policies -> Administrative Templates -> System -> Logon*
 ![](pic/DC1-4_1.png)  
 ![](pic/DC1-4.png) 
 ![](pic/DC1-4_2.png)    
   
 **Добавим членов группы IT в группу локальных администраторов на все компьютеры в домене**    
-переходим Computer Configuration -> Policies -> Windows Setting -> Security Settings -> Restricted Groups
+переходим *Computer Configuration -> Policies -> Windows Setting -> Security Settings -> Restricted Groups*
 ![](pic/DC1-1.png)  
 Далее нажимаем *Add group* и добавляем *IT* в группу локальных администраторов.   
   
@@ -34,9 +34,23 @@
 ![](pic/DC1-2.png)
 ![](pic/DC1-3_1.png)
 ![](pic/DC1-3.png)
-![](pic/DC1-3_2.png)    
-  
-  ![](pic/home_page.png)
+![](pic/DC1-3_2.png)  
+
+ Результат работы групповых политик.
+ ![](pic/home_page.png)   
+ 
+ **Создание ярлыка программы *Калькулятор* на рабочем столе компьютера CLI**  
+ Заходим User *Configuration -> Preferences -> Windows Setting -> Shortcuts*    
+ Создаем название и указываем путь до программы
+ ![](pic/calc2.png) 
+ 
+ Указываем, на каком компьютере применить политику
+ ![](pic/calc3.png)   
+ 
+ Результат работы групповой политики
+ ![](pic/calc4.png)   
+ 
+ 
 
 
 
