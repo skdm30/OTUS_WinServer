@@ -36,7 +36,7 @@
 ![](pic/DC1-3.png)
 ![](pic/DC1-3_2.png)    
   
-  ![](pic/home_page.bmp)
+  ![](pic/home_page.png)
 
 
 
